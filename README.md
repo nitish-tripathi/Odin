@@ -2,7 +2,7 @@
 ![License](https://img.shields.io/badge/Code%20License-MIT-blue.svg)
 
 # Odin
-Nitish Tripathi
+Nitish Tripathi, 2017
 
 Odin is a high-level neural networks API, written in Python and running on top of Theano. 
 # 
