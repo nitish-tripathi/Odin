@@ -1,3 +1,12 @@
+"""
+# Nitish Tripathi 2017
+# odin Deep Learning Library
+#
+# Implements base network class for developing neural network
+# Author: Nitish Tripathi
+#
+# License: MIT
+"""
 
 #### Libraries
 # Standard library

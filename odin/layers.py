@@ -1,5 +1,11 @@
 """
-http://neuralnetworksanddeeplearning.com/chap6.html
+# Nitish Tripathi 2017
+# odin Deep Learning Library
+#
+# Implements convolution-pool layer, fully connected layer and softmax mayer
+# Author: Nitish Tripathi
+#
+# License: MIT
 """
 
 #### Libraries
