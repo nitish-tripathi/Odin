@@ -1,6 +1,10 @@
 
-import numpy as np
+# Standard library
+import cPickle
+import gzip
 
+# Third-party libraries
+import numpy as np
 import theano
 import theano.tensor as T
 from theano import function
@@ -21,3 +25,19 @@ def one_hot_encoder(data):
         e = create_entry(x)
         data1.append(e)
     return np.array(data1)
+
+def load_mnist_data(filename=None):
+    if filename == None:
+        f = gzip.open('mnist.pkl.gz', 'rb')
+    else:
+        f = gzip.open(filename, 'rb')
+    
+    training_data, validation_data, test_data = cPickle.load(f)
+    f.close()
+
+    def shared(data):
+        shared_x = theano.shared(np.asarray(data[0], dtype=theano.config.floatX), borrow=True)
+        shared_y = theano.shared(np.asarray(data[1], dtype=theano.config.floatX), borrow=True)
+        return shared_x, theano.tensor.cast(shared_y, "int32")
+    
+    return [shared(training_data), shared(validation_data), shared(test_data)]

@@ -11,12 +11,12 @@ import matplotlib.pyplot as plt
 
 # Odin library classes
 import network
-import mnist_loader
+import helpers
 from layers import convolutionpoollayer, fullyconnectedlayer, softmaxlayer
 
 def main():
     """ Main """
-    training_data, validation_data, test_data = mnist_loader.load_data_shared("odin/datasets/mnist.pkl.gz")
+    training_data, validation_data, test_data = helpers.load_mnist_data("odin/datasets/mnist.pkl.gz")
     net = network.network([
           convolutionpoollayer(filter_shape=(20, 1, 5, 5), image_shape=(10, 1, 28, 28), poolsize=(2,2)),
           fullyconnectedlayer(n_in=12*12*20, n_out=100),
