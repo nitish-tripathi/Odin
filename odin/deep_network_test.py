@@ -18,9 +18,6 @@ def main():
     """ Main """
     training_data, validation_data, test_data = helpers.load_mnist_shared_data("odin/datasets/mnist.pkl.gz")
     
-    print type(training_data)
-    print type(training_data[0])
-
     X, y = training_data
     
     X_test = theano.shared(np.asarray(X.get_value()[0:3], dtype=theano.config.floatX), borrow=True)
