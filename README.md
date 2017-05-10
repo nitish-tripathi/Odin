@@ -4,7 +4,7 @@
 # Odin
 Nitish Tripathi, 2017
 
-Odin is a high-level neural networks API, written in Python and running on top of Theano. Odin allows for easy and fast prototyping through user friendliness, modularity, and extensibility.
+Odin is a high-level neural networks api, written in python and running on top of theano. Odin allows for easy and fast prototyping through user friendliness, modularity, and extensibility.
  
 It is under development with a focus on easy implementation of deep neural network. Currently it supports only convolution neural network. However, work is in progress to implement recurrent neural network.
 
