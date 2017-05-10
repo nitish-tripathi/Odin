@@ -1,10 +1,8 @@
 ![Python 2.7](https://img.shields.io/badge/Python-2.7-blue.svg)
 ![License](https://img.shields.io/badge/Code%20License-MIT-blue.svg)
 
-
-# Odin
 ![](./docs/img/odin_small.png)
-
+# Odin
 
 Nitish Tripathi, 2017
 
