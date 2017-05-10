@@ -2,7 +2,7 @@
 ![License](https://img.shields.io/badge/Code%20License-MIT-blue.svg)
 
 ![](./docs/img/odin_small.png) 
-# Odin
+## Odin
 
 
 Nitish Tripathi, 2017
