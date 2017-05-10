@@ -115,11 +115,14 @@ class softmaxlayer(object):
         
         self.params = [self.w, self.b]
     
-    def _set_input(self, _input, mini_batch_size):
+    def _set_input(self, _input, mini_batch_size=1):
         self._input = _input.reshape((mini_batch_size, self.n_in))
         self._output =  T.nnet.softmax(T.dot(self._input, self.w) + self.b)
         self.y_out = T.argmax(self._output, axis=1)
-    
+
+    def _get_output(self):
+        return self.y_out
+
     def cost(self, net):
         "Return the log-likelihood cost."
         return -T.mean(T.log(self._output)[T.arange(net.y.shape[0]), net.y])
