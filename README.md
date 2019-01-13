@@ -21,4 +21,4 @@ To get started with odin, you will need following requirements:
   * Latest version of theano is recommended.
   * A detailed information about how to install can be found here: http://deeplearning.net/software/theano/install.html
 * NumPy >= 1.9.1 <= 1.12
-  * Although odin also works with the latest version of numpy, theano recommends the above numpy versions.
+  * Although odin also works with the latest version of numpy, theano recommends the above numpy versions. 
